@@ -105,14 +105,15 @@ export const types = {
   bitwiseOR: new BinopTokenType("|", 3),
   bitwiseXOR: new BinopTokenType("^", 4),
   bitwiseAND: new BinopTokenType("&", 5),
-  equality: new BinopTokenType("==/!=", 6),
-  relational: new BinopTokenType("</>", 7),
-  bitShift: new BinopTokenType("<</>>", 8),
-  plusMin: new TokenType("+/-", { beforeExpr, binop: 9, prefix, startsExpr }),
-  modulo: new BinopTokenType("%", 10),
-  star: new BinopTokenType("*", 10),
-  slash: new BinopTokenType("/", 10),
-  exponent: new TokenType("**", { beforeExpr, binop: 11, rightAssociative: true })
+  pipelineToR: new BinopTokenType("|>", 6),
+  equality: new BinopTokenType("==/!=", 7),
+  relational: new BinopTokenType("</>", 8),
+  bitShift: new BinopTokenType("<</>>", 9),
+  plusMin: new TokenType("+/-", { beforeExpr, binop: 10, prefix, startsExpr }),
+  modulo: new BinopTokenType("%", 11),
+  star: new BinopTokenType("*", 11),
+  slash: new BinopTokenType("/", 11),
+  exponent: new TokenType("**", { beforeExpr, binop: 12, rightAssociative: true })
 };
 
 export const keywords = {
